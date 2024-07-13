@@ -41,37 +41,52 @@
     border-radius: 0px 15px 15px 0px;
     margin-top: auto;
     margin-bottom: auto;
-    background-color: #ffffff;
+    background-color: #ececec85;
+}
+.container-keyboard > h1{
+    font-family: myfonte;
+    font-size: 23pt;
+    color: #10085c ;
+    margin-left: 15px;
+    text-shadow: 2px 2px 3px #00000034;
 }
 .input{
     font-size: 17pt;
     height: 60px;
+    width: 280px;
+    font-weight: bold;
     border: none;
     outline: none;
     margin-left: 30px;
+    background-color: #f3f3f385;
+}
+::-webkit-input-placeholder{
+    color: #24245f;
 }
 .keyboard{
    margin-left: 28px;
 }
 .key{
-    background-color: #f3f3f3;
+    background-color: #ffffff5b;
+    color: #24245f;
     border: 1px solid #00000057;
     font-size: 20px;
+    font-weight: bold;
     height: 55px;
     width: 104px;
     flex-wrap: wrap;
     margin-bottom: 5px;
+    border-radius: 5px;
+}
+.key:hover{
+    background-color: #dddddd;
+    border: none;
 }
 
 .button{
     border: none;
-    background-color: #fff;
     cursor: pointer;
-    
-}
-.key:hover{
-    background-color: #dadada;
-    border: none;
+    background-color: #f3f3f385;
 }
 .button-call{
     background-image: linear-gradient(45deg, #53dfcc, #17b3b9, #4ba8a8);
