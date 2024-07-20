@@ -24,9 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
 function trocarImagem(){ 
 
     let imagemMic = document.getElementById("mic");
-    if (imagemMic.src.includes("mic.png")){
+    if (imagemMic.src.includes("microfone.png")){
         imagemMic.src = "icones/mic-mudo.png";
     } else {
-        imagemMic.src = "icones/mic.png";
+        imagemMic.src = "icones/microfone.png";
     } 
+}
+function autoFalante(){
+
+    let imagemSom = document.getElementById("som");
+    if (imagemSom.src.includes("som.png")){
+        imagemSom.src = "icones/som-mudo.png";
+    } else {
+        imagemSom.src = "icones/som.png";
     }
+}
