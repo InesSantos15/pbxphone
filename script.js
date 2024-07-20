@@ -30,7 +30,8 @@ function trocarImagem(){
         imagemMic.src = "icones/microfone.png";
     } 
 }
-function autoFalante(){
+
+function TrocarImagem(){
 
     let imagemSom = document.getElementById("som");
     if (imagemSom.src.includes("som.png")){
@@ -38,4 +39,6 @@ function autoFalante(){
     } else {
         imagemSom.src = "icones/som.png";
     }
+
+
 }
