@@ -31,7 +31,12 @@
     align-items: center;
     border-radius: 10px;
 }
-
+.menu:hover{
+    border: 1px solid #ffd800;
+    transform: translate(4px 4px);
+    transition: transform 0.3s, border 0.1s;
+    box-shadow: 5px 5px 8px #0000004f;
+}
 .container-keyboard{
     display: flex;  
     flex-direction: column;
