@@ -1,22 +1,22 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    const display = document.getElementById("display");
+    const display = document.getElementById("itel");
     const keys = document.querySelectorAll(".key");
     const callButton = document.getElementById("call");
     const deleteButton = document.getElementById("delete");
 
         keys.forEach(key => {
             key.addEventListener("click", () => {
-                display.value += key.textContent;
+                itel.value += key.textContent;
             });
         });
         
         deleteButton.addEventListener("click", () => {
-            display.value = display.value.slice(0, -1); //remove o ultimo caractere
+            itel.value = itel.value.slice(0, -1); //remove o ultimo caractere
         });
 
         callButton.addEventListener("click", () => {
-            alert(`Ligando para ${display.value}`);
+            alert(`Ligando para ${itel.value}`);
         });
 })
 
