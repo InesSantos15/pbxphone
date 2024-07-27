@@ -7,53 +7,58 @@
     <link rel="stylesheet" href="style.css">
     <title>pbxPhone</title>
 </head>
-<body class="container">    <!--Elemento pai de todos-->
-    <nav class="container-menu">    <!--Elemento pai dos elementos do menu-->
-        <div class="menu">   <!--filhos do conteiner-menu-->
-            <img id="teclado" src="icones/teclado.png" alt="icone de teclado">
-        </div>
-        <div class="menu">
-            <img id="recentes" src="icones/recentes.png" alt="icone de chamada recente">
-        </div>
-        <div class="menu">
-            <img id="contatos" src="icones/contatos.png" alt="icone de contatos">
-        </div>
-        <div class="menu">
-            <img id="chamadas" src="icones/chamada.png" alt="icone de chamada perdida">
-        </div>
-    </nav>
-    <section class="container-keyboard"> <!--Sessão do teclado-->
-        <h1>pbxPhone</h1>
-        <div class="box-input"> <!--Divisao para o input-->
-            <input class="input" name="tel" id="itel" type="tel" placeholder="Número de Telefone..." >
-            <button class="button" id="delete">
-                <img src="icones/excluir35.png" alt="delete">
-            </button>
-        </div>
-        <div class="keyboard"> <!--Divisao para o teclado-->
-            <button class="key">1</button>
-            <button class="key">2</button>
-            <button class="key">3</button>
-            <button class="key">4</button>
-            <button class="key">5</button>
-            <button class="key">6</button>
-            <button class="key">7</button>
-            <button class="key">8</button>
-            <button class="key">9</button>
-            <button class="key">&#42;</button>
-            <button class="key">0</button>
-            <button class="key">&#35;</button>
-        </div>
-        <div class="container-button"> <!--Divisão para os botoes-->
-                <button class="button button-call" id="call">Ligar</button>
-            <button class="button button-son" id="autofalante" onclick="TrocarImagem()">
-                <img id="som" src="icones/som.png" alt="auto-falante">
-            </button>
-            <button class="button button-mic" id="mudo" onclick="trocarImagem()">
-                <img id="mic" src="icones/microfone.png" alt="microfone">
-            </button>
-        </div>
+<body>  
+    <main class="container">  <!--Elemento pai de todos-->
+        <nav class="container-menu">    <!--Elemento pai dos elementos do menu-->
+            <div class="menu">   <!--filhos do conteiner-menu-->
+                <img id="teclado" src="icones/teclado.png" alt="icone de teclado">
+            </div>
+            <div class="menu">
+                <img id="recentes" src="icones/recentes.png" alt="icone de chamada recente">
+            </div>
+            <div class="menu">
+                <img id="contatos" src="icones/contatos.png" alt="icone de contatos">
+            </div>
+            <div class="menu">
+                <img id="chamadas" src="icones/chamada.png" alt="icone de chamada perdida">
+            </div>
+        </nav>
+        <section class="container-keyboard"> <!--Sessão do teclado-->
+            <h1>pbxPhone</h1>
+            <div class="box-input"> <!--Divisao para o input-->
+                <input class="input" name="tel" id="itel" type="tel" placeholder="Número de Telefone..." >
+                <button class="button" id="delete">
+                    <img src="icones/remover.png" alt="delete">
+                </button>
+            </div>
+            <div class="keyboard"> <!--Divisao para o teclado-->
+                <button class="key">1</button>
+                <button class="key">2</button>
+                <button class="key">3</button>
+                <button class="key">4</button>
+                <button class="key">5</button>
+                <button class="key">6</button>
+                <button class="key">7</button>
+                <button class="key">8</button>
+                <button class="key">9</button>
+                <button class="key">&#42;</button>
+                <button class="key">0</button>
+                <button class="key">&#35;</button>
+            </div>
+            <div class="container-button"> <!--Divisão para os botoes-->
+                    <button class="button button-call" id="call">Ligar</button>
+                <button class="button button-son" id="autofalante" onclick="TrocarImagem()">
+                    <img id="som" src="icones/som.png" alt="auto-falante">
+                </button>
+                <button class="button button-mic" id="mudo" onclick="trocarImagem()">
+                    <img id="mic" src="icones/microfone.png" alt="microfone">
+                </button>
+            </div>
     </section>
+    <aside class="mensagem">
+        <p>NÃO HÁ CHAMADA ATIVA</p>
+    </aside>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

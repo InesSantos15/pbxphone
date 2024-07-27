@@ -56,6 +56,13 @@
     margin-left: 15px;
     text-shadow: 2px 2px 3px #00000034;
 }
+.mensagem{
+    display: flex;
+    align-items: center;
+    padding-left: 300px;
+    font-size: 17pt;
+    font-weight: 600;
+}
 .input{
     font-size: 17pt;
     height: 60px;
