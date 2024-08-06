@@ -1,4 +1,6 @@
 
+const apiUrl = 'http://localhost:8000'; // url de chamada da api
+
 document.addEventListener("DOMContentLoaded", () => {
     const display = document.getElementById("itel");
     const keys = document.querySelectorAll(".key");
@@ -17,6 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         callButton.addEventListener("click", () => {
             alert(`Ligando para ${itel.value}`);
+            /*fetch(`${apiUrl}/call`, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({phone: itel}),
+              })*/
+             
         });
 })
 
@@ -39,6 +49,41 @@ function TrocarImagem(){
     } else {
         imagemSom.src = "icones/som.png";
     }
-
-
 }
+
+// Função para alterar a section
+function alterarSection() {
+    // Seleciona a section com id 'ckybd'
+    const section = document.getElementById('ckybd');
+
+    // Verifica se a section foi encontrada
+    if (section) {
+        // Altera o conteúdo ou estilo da section
+        section.innerHTML = `
+            <h1>Histórico de Chamadas</h1>
+            <p>Aqui estão suas chamadas recentes...</p>
+            <!-- Você pode adicionar mais conteúdo aqui -->
+        `;
+    }
+}
+
+// Adiciona um manipulador de eventos ao ícone com id 'recentes'
+document.getElementById('recentes').addEventListener('click', alterarSection); 
+
+
+// Função para exibir a seção com id 'ckybd' e ocultar outras seções
+function mostrarTeclado() {
+    // Seleciona a seção com id 'ckybd'
+    const tecladoSection = document.getElementById('ckybd');
+    
+    // Verifica se a seção foi encontrada
+    if (tecladoSection) {
+        // Exibe a seção do teclado
+        tecladoSection.style.display = 'block';
+        
+    
+    }
+}
+
+// Adiciona um manipulador de eventos ao ícone com id 'recentes'
+document.getElementById('teclado').addEventListener('click', mostrarTeclado); 
